@@ -50,11 +50,13 @@ if [ -f "$CONFIG_FILE" ]; then
 fi
 
 # Interactive setup
+echo "→ Hotspot setup"
 read -p "Enter Hotspot SSID [${SSID:-Pi4G-Hotspot}]: " input_ssid
 SSID=${input_ssid:-${SSID:-Pi4G-Hotspot}}
 
 while true; do
-    read -p "Enter Hotspot Password (at least 8 characters) [${PASSWORD:-Passwd123}]: " input_pass
+    read -s -p "Enter Hotspot Password (at least 8 characters) [${PASSWORD:-Passwd123}]: " input_pass
+    echo
     PASSWORD=${input_pass:-${PASSWORD:-Passwd123}}
     if [ ${#PASSWORD} -ge 8 ]; then
         break
