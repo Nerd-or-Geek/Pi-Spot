@@ -27,8 +27,8 @@ Perfect for travel, remote locations, backup internet, or YouTube projects.
 After flashing **Raspberry Pi OS Lite (64-bit)** to your SD card and booting the Pi:
 
 ``` bash
-git clone https://github.com/yourusername/pi4g-hotspot.git
-cd pi4g-hotspot
+git clone https://github.com/Nerd-or-Geek/Pi-Spot.git
+cd Pi-Spot
 chmod +x install.sh
 sudo ./install.sh
 ```
@@ -51,7 +51,7 @@ After reboot, the hotspot should start automatically.
 To pull the latest changes while keeping your SSID and password:
 
 ``` bash
-cd ~/pi4g-hotspot
+cd ~/Pi-Spot
 git pull
 sudo ./install.sh
 ```
@@ -103,7 +103,7 @@ MIT License
 ------------------------------------------------------------------------
 
 Made for makers and content creators.\
-Star the repo if you find it useful! ⭐ \`\`\`
+Star the repo if you find it useful! ⭐
 
 **What to do now:**
 
